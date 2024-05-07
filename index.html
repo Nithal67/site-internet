@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIEL pour le ciel</title>
+    <link rel="stylesheet" href="style.css">
+
+<header>
+    <!-- Bannière et nom du site -->
+    <img src="banniere.jpg" alt="Bannière">
+    <h1>lycée Gutemberg section CIEL</h1>
+</header>
+
+<!-- Bouton pour afficher/cacher le menu -->
+<div id="menuBtn">&#9776;</div>
+
+<div class="sidebar" id="sidebar">
+    <!-- Menu à gauche avec des boutons cliquables -->
+    <a href="index.html">Accueil</a>
+    <a href="pagehoraires.html">Horaires</a>
+    <a href="pageexam.html">Examens</a>
+</div>
+
+<div class="content">
+    <section id="accueil">
+        <!-- Contenu de l'accueil -->
+        <h2>Explication</h2>
+        <p>
+            <h1>Présentation du BAC PRO CIEL</h1>
+            Le bac pro CIEl permet de former des techniciens capables d'exercer des activités professionnelles 
+            liées à la préparation, la mise en route et la maintenance des installations organisées sous forme de systèmes informatisés interconnectés communicants appartenant aux secteurs industriels et domestiques de l'électronique. 
+            <br>
+            <br>
+            <h3>Les champs professionnels<br></h3>
+            Télécom et réseaux 
+            Électroniques industrielles embarquées
+            Audiovisuel Multimedia
+            Audiovisuel Professionnel
+            Alarme Sécurité Incendie
+            Électroménager
+            <br>
+            <br>
+            <h3>La formation<br></h3>
+            Dans des ateliers d'électronique, ou des salles informatiques, l'élève travaille sur des systèmes industriels réels 
+            ou adaptés à l'enseignement. L'élève pourra faire des mesures, des contrôles et des tests sur les systèmes électroniques
+            à l'aide d'appareils de mesure sophistiqués. Il apprendra à paramétrer des applications logicielles et à configurer 
+            des réseaux informatiques.
+            <br>				
+            <br>
+            <h3>Stage en entreprise<br></h3>
+            Au cours de sa première année de formation (année de la seconde), l'élève doit effectuer un stage en entreprise
+            d'une durée de <strong>4 semaines</strong>. En première et terminale, la durée de la formation en milieu professionnel est de <strong>16 semaines</strong> 
+            réparties en plusieurs séquences <em>d'une durée minimale de 3 semaines.</em>
+            <br>
+            <br>
+        </p>
+    </section>
+</div>
+
+<footer>
+    <!-- Informations supplémentaires -->
+    <div class="info">
+        <h3>Infos</h3>
+        <p>Mon adresse mail : <a href="mailto:thomanathan@outlook.fr" title="Ceci est l'adresse mail de Thoma Nathan">thomanathan@outlook.fr</a></p>
+        <p>Site du lycée : <a href="http://www.lyceegutenberg.net/" title="Ceci est le site du lycée">http://www.lyceegutenberg.net/</a></p>
+    </div>
+</footer>
+
+
+<!-- Script pour afficher/cacher le menu -->
+<script>
+    document.getElementById("menuBtn").addEventListener("click", function() {
+        var sidebar = document.getElementById("sidebar");
+        var content = document.querySelector(".content");
+        if (sidebar.style.left === "-200px") {
+            sidebar.style.left = "0";
+            content.style.marginLeft = "200px";
+        } else {
+            sidebar.style.left = "-200px";
+            content.style.marginLeft = "0";
+        }
+    });
+</script>
+
+</body>
+</html>

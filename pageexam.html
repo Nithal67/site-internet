@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue sur mon site !</title>
+    <link rel="stylesheet" href="style.css">
+
+<header>
+    <!-- Bannière et nom du site -->
+    <img src="banniere.jpg" alt="Bannière">
+    <h1>lycée Gutenberg section CIEL</h1>
+</header>
+
+<!-- Bouton pour afficher/cacher le menu -->
+<div id="menuBtn">&#9776;</div>
+
+<div class="sidebar" id="sidebar">
+    <!-- Menu à gauche avec des boutons cliquables -->
+    <a href="index.html">Accueil</a>
+    <a href="pagehoraires.html">Horaires</a>
+    <a href="pageexam.html">Examens</a>
+</div>
+
+<div class="content">
+    <section id="exam">
+        <!-- Contenu du stage -->
+        <h2>exam</h2>
+        <img src="exam.jpg" alt="les exmas"title="Ceci sont les coefficients par matière dans le cade d'un bac pro CIEL">
+    </section>
+    </section>
+</div>
+
+<footer>
+    <!-- Informations supplémentaires -->
+    <div class="info">
+        <h3>Infos</h3>
+        <p>Mon adresse mail : <a href="mailto:thomanathan@outlook.fr" title="Ceci est l'adresse mail de Thoma Nathan">thomanathan@outlook.fr</a></p>
+        <p>Site du lycée : <a href="http://www.lyceegutenberg.net/" title="Ceci est le site du lycée">http://www.lyceegutenberg.net/</a></p>
+    </div>
+</footer>
+
+
+<!-- Script pour afficher/cacher le menu -->
+<script>
+    document.getElementById("menuBtn").addEventListener("click", function() {
+        var sidebar = document.getElementById("sidebar");
+        var content = document.querySelector(".content");
+        if (sidebar.style.left === "-200px") {
+            sidebar.style.left = "0";
+            content.style.marginLeft = "200px";
+        } else {
+            sidebar.style.left = "-200px";
+            content.style.marginLeft = "0";
+        }
+    });
+</script>
+
+</body>
+</html>
